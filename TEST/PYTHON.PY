@@ -1,6 +1,7 @@
 #import os
 import csv
 import pandas as pd
+import math
 
 
 
@@ -9,4 +10,5 @@ with open('/workspaces/codespaces-jupyter/TEST/bangalore-rainfall-data-1900-2024
   #csvFile = csv.DictReader(file)
   #for lines in csvFile:
   #      print(lines)
-  print(sum(csvFile.Jan))
+  print(len(csvFile.Jan))
+  print(sum(csvFile.Jan)/len(csvFile.Jan))
